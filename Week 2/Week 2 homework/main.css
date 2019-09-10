@@ -1,0 +1,50 @@
+body {
+    margin: 0px;
+}
+
+nav {
+    background-color:lavender;
+    padding: 20px 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+    margin:0px;
+}
+
+li a {
+    display: block;
+    padding: 16px 24px;
+    text-decoration: none;
+  }
+
+li a:hover {
+    background-color: gray;
+    color:lavender;
+}
+
+nav li:first-child {
+    margin-top: 0px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: gray;
+    text-transform: lowercase;
+}
+
+@media(min-width: 540px){
+    nav ul li {
+        display: inline-block;
+        padding-bottom: 5px;
+        border-bottom: 0px;
+        margin: 10px 20px;
+    }
+    nav ul {
+        text-align: center;
+    }
+    nav {
+        padding: 0px 10px;
+    }
+}
