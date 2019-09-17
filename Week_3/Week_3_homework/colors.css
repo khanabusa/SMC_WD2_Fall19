@@ -1,21 +1,21 @@
 .purple {
-    background-color: rgb(92, 0, 128);
+    background-color: lavender;
 }
 
 .red {
-    background-color: rgb(241, 69, 38);
+    background-color: rgb(255, 216, 209);
 }
 
 .yellow {
-    background-color: rgb(255, 255, 77);
+    background-color: rgb(255, 255, 209);
 }
 
 .green {
-    background-color: rgb(47, 204, 16);
+    background-color: rgb(210, 255, 200);
 }
 
 .blue {
-    background-color: rgb(61, 61, 240);
+    background-color: rgb(212, 212, 255);
 }
 
 .transparent {
