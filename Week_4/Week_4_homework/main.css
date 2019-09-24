@@ -10,10 +10,10 @@ header {
 }
 
 .header {
-    padding: 20px 90px;
+    padding: 5px;
     text-align: center;
-    background:white;
-    color: grey;
+    background: rgb(255, 255, 244);
+    color: black;
     font-family: sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -30,7 +30,7 @@ header label img {
 }
 
 nav {
-    padding: 10px;
+    padding: 5px;
     display: none;
 }
 
@@ -59,6 +59,27 @@ nav ul a {
     text-decoration: none;
     color: grey;
     text-transform: lowercase;
+}
+
+h2 {
+    margin: 5px;
+    font-family: serif;
+    color: grey;
+    background-color: rgb(255, 255, 244);
+}
+
+h3 {
+    font-family: serif;
+    color: grey;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 5px;
+}
+
+p {
+    font-family: serif;
+    color: grey;
+    margin: 20px;
 }
 
 li a:hover {
