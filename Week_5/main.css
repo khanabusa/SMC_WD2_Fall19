@@ -1,63 +1,56 @@
 @import "colors.css";
 @import url(layout.css);
+@import url(navbar.css);
 
-header {
-    background-color: lightcyan;
+/*multi-line vertical alignment*/
+.content-table {
+    display: table;
+    height: 120px;
 }
 
-header input#toggler {
-    display: none;
+.content-table p {
+    display: table-cell;
+    vertical-align: middle;
 }
 
-header label img {
-    width: 30px;
-    height: auto;
-    margin: 10px 20px;
+/*block element with no height*/
+.pos-relative {
+    position: relative;
 }
 
-nav {
-    padding: 10px;
-    display: none;
+.v-centered-block {
+    height: 100px;
+    margin-top: -50px;
+    top: 50%;
+    position: absolute;
+    width: 100%;
 }
 
-input#toggler:checked + nav {
-    display: block;
+/*with unknown height*/
+.v-centered-block {
+    height: 160px;
+    top: 50%;
+    position: absolute;
+    width: 100%;
+    transform: translateY(-50%);
 }
 
-nav ul {
-    list-style: none;
-    padding-left: 0px;
-    margin:0px;
+/*block element v and h centered - known height/width*/
+.v-h-centered-block {
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -70px;
+    margin-left: -70px;
 }
 
-nav li {
-    border-bottom: 1px solid;
-    color: #212529;
-    padding: 10px;
-    margin: 10px;
-}
-
-nav li:first-child {
-    margin-top: 0px;
-}
-
-nav ul a {
-    text-decoration: none;
-    color: #212529;
-    text-transform: uppercase;
-}
-
-@media(min-width: 540px){
-    nav ul li {
-        display: inline-block;
-        padding-bottom: 5px;
-        border-bottom: 0px;
-        margin: 10px 20px;
-    }
-    nav ul {
-        text-align: center;
-    }
-    nav {
-        padding: 10px;
-    }
+.v-h-centered-block {
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
 }
