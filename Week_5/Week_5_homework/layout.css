@@ -30,7 +30,7 @@ p {
 
 .floater-section {
     float: left;
-    min-height: 300px;
+    min-height: 570px;
     width: 100%;
 }
 
@@ -60,7 +60,7 @@ img {
     }
 
     .floater-section {
-        min-height: 305px;
+        min-height: 700px;
     }
 
     .width-md-25 {
@@ -95,7 +95,7 @@ img {
     }
 
     .floater-section {
-        min-height: 405px;
+        min-height: 700px;
     }
 
     .width-lg-25 {
