@@ -1,5 +1,5 @@
 .purple {
-    background-color: lavender;
+    background-color: transparent;
 }
 
 .red {
@@ -16,6 +16,14 @@
 
 .blue {
     background-color: rgb(212, 212, 255);
+}
+
+.charcoal {
+    background-color:  rgb(73, 73, 73);
+}
+
+.black {
+    background-color: black;
 }
 
 .transparent {
