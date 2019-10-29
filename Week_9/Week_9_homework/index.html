@@ -11,6 +11,8 @@
         <nav id="navBar">
             <button id="colorButton">Color Me</button>
             <button id="shadowButton">Shadow Me</button>
+            <button id="marginButton">Margin Me</button>
+            <button id="fontButton">Font Me</button>
         </nav>
     </header>
 
@@ -42,7 +44,7 @@
     
         } );
 
-        document.getElementById("contentMain").style.backgroundColor = "rgb(255, 0, 0)";
+        document.getElementById("contentMain").style.backgroundColor = "";
 
         alert("This is our very first Java Script written.");
     </script>
@@ -63,5 +65,40 @@
             document.getElementById("contentMain").style.textShadow = "";
     
         </script>
+
+<script>
+    document.getElementById("marginButton").addEventListener("click", function(){
+            console.log("Fire");
+            var mainContent = document.getElementById("contentMain");
+
+            var margin = "50px" 
+
+            console.log(margin);
+
+            mainContent.style.margin = margin;
+    
+        } );
+
+        document.getElementById("contentMain").style.margin = "";
+
+    </script>
+
+<script>
+    document.getElementById("fontButton").addEventListener("click", function(){
+            console.log("Fire");
+            var mainContent = document.getElementById("contentMain");
+
+            var fontFamily = "Impact,Charcoal,sans-serif" 
+
+            console.log(fontFamily);
+
+            mainContent.style.fontFamily = fontFamily;
+    
+        } );
+
+        document.getElementById("contentMain").style.fontFamily = "";
+
+    </script>
+
     </body>
 </html>
