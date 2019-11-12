@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        button {
+            color: black;
+            cursor: pointer;
+        }
+
+        div {
+            margin: 3px;
+            width: 80px;
+            display: none;
+            height: 80px;
+            float: left;
+        }
+        #one {
+            background: rgba(212, 0, 255, 0.333);
+        }
+        #two {
+            background: rgba(212, 0, 255, 0.666);
+        }
+        #three {
+            background:rgba(212, 0, 255);
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+               
+    <button id="btn1">Fade In</button>
+    <button id="btn2">Fade Out</button>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+               
+<script>
+    $( "#btn1" ).click(function() {
+        $( "div:hidden" ).first().fadeIn( "slow" );
+    });
+
+    $( "#btn2" ).click(function() {
+    $( "div" ).last().fadeOut("slow");
+    });
+</script>
+               
+</body>
+</html>
