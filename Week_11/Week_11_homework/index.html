@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <style>
         button {
             color: black;
@@ -12,7 +13,7 @@
             width: 80px;
             display: none;
             height: 80px;
-            float: left;
+            /* float: left; */
         }
         #one {
             background: rgba(212, 0, 255, 0.333);
@@ -22,6 +23,18 @@
         }
         #three {
             background:rgba(212, 0, 255);
+        }
+
+        #Box {
+            width: 800px;
+            height: auto;
+            background-color: #5f2e2e;
+        }
+
+        .little-box {
+            background-color: orchid;
+            display: inline-block;
+            margin: 5px;
         }
     </style>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -34,14 +47,23 @@
     <div id="one"></div>
     <div id="two"></div>
     <div id="three"></div>
+
+    <section id="Box">
+
+    </section>
                
 <script>
     $( "#btn1" ).click(function() {
-        $( "div:hidden" ).first().fadeIn( "slow" );
+        // $( "div:hidden" ).first().fadeIn( "slow" );
+        $("#Box").append('<div class="little-box"></div>');
+
     });
 
     $( "#btn2" ).click(function() {
-    $( "div" ).last().fadeOut("slow");
+        var toRemove = $( "div.little-box" ).last();
+        toRemove.fadeOut(1200, function(){
+            $(this).remove();
+        });
     });
 </script>
                
