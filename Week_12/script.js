@@ -15,9 +15,10 @@ $(document).ready(function(){
         if(currentSelection === 'show'){
             $('.box').show(1000);
         }
-        if(currentSelection === 'hide') {
-            $('.box').hide(1000), function
-            $('main section.notification-area').append('<p class="notification">box hidden</p>');
+        if(currentSelection === 'hide'){
+            $('.box').hide(1000, function(){
+            $('main section.notification-area').append('<p class="notification">Box hidden</p>');
+            });
         }
         if(currentSelection === 'slidedown') {
             $('.box').slideDown(1000);

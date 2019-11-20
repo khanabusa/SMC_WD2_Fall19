@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="main.css">
+    <title>cartoons</title>
+
+    <style>
+        div {
+            display: block;
+            float: left;
+        }
+        #Box {
+            width: 800px;
+            height: auto;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body> 
+    <header>
+            <select id="FX">
+                    <option value="" default>
+    
+                    </option>
+                    <option value="fadeOut">fade Robin</option>
+                    <option value="hide">hide Spongebob</option>
+                    <option value="slideUp">slide Chowder</option>
+                </select>
+    </header>
+    <main>
+    
+            <div class="floater-section width-md-33 width-lg-25 image-size robin">
+                <div class="content">
+                    <img src="https://cn.i.cdn.ti-platform.com/content/1107/showpage/teen-titans-go%21/ae/ttg-200x200.png" alt="Robin">
+                </div>
+            </div>
+
+            <div class="floater-section width-md-33 width-lg-25 image-size">
+                <div class="content">
+                    <img src="http://cheb-room.ru/uploads/cheb/2016/11/w9RC4W-QqXw-200x200.jpg" alt="Homer">
+                </div>
+            </div>
+
+            <div class="floater-section width-md-33 width-lg-25 image-size">
+                <div class="content">
+                    <img src="https://freepngimg.com/thumb/cartoon/4-2-cartoon-transparent-thumb.png" alt="Mickey">
+                </div>
+            </div>
+
+            <div class="floater-section width-md-33 width-lg-25 image-size">
+                <div class="content">
+                    <img src="https://www.the-arcade.ie/wp-content/uploads/2014/03/Deedee-Cartoon-Vector-1-200x200.jpg" alt="DeeDee">
+                </div>
+            </div>
+
+            <div class="floater-section width-md-33 width-lg-25 image-size chowder">
+                <div class="content">
+                    <img src="https://cn.i.cdn.ti-platform.com/content/373/showpage/chowder/uk/chowder-200x200.png" alt="Chowder">
+                </div>
+            </div>
+
+            <div class="floater-section width-md-33 width-lg-25 image-size">
+                <div class="content">
+                    <img src="https://i.ebayimg.com/thumbs/images/g/PZwAAOSwImRYEO1N/s-l200.jpg" alt="Bubbles">
+                </div>
+            </div>
+
+            <div class="floater-section width-md-33 width-lg-25 image-size spongebob">
+                    <div class="content">
+                        <img src="http://www.themefreak.net/uploads/avatars/avatar_100.jpg?dateline=1336770265" alt="Spongebob">
+                    </div>
+                </div>
+
+            <div class="floater-section width-md-33 width-lg-25 image-size">
+                <div class="content">
+                    <img src="https://img.sharetv.com/shows/characters/thumbnails/catdog.dog.jpg" alt="Dog">
+                </div>
+            </div>
+            <div class="floater-section width-md-33 width-lg-100 image-size">
+                <div class="content">
+                    <img src="https://i.pinimg.com/originals/f6/fe/f5/f6fef50e4822040bb10667469e95cd8f.png" alt="Louise">
+                </div>
+            </div>
+            </div>
+
+
+    </main>
+
+
+    <script>
+           $(document).ready(function(){
+
+            $('select#FX').change(function(){
+            var currentSelection = $(this).val();
+
+            if(currentSelection == 'fadeOut'){
+            $('.robin').fadeOut(1000);
+            }
+            if(currentSelection == 'hide'){
+            $('.spongebob').hide(1000);
+            }
+
+            if(currentSelection == 'slideUp'){
+            $('.chowder').slideUp(1000);
+            }
+    })
+    });
+    </script>    
+</body>
+
+</html>
