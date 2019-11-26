@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Londrina+Solid|Open+Sans&display=swap');
+
+body {
+    background-image: url("images/bobs_street.jpg");
+    background-color: white;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    width: 100%;
+   }
+
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    padding: 20px;
+  }
+
+  .nav-item {
+    font-family: 'Londrina Solid', cursive;
+    color: rgb(255, 23, 23);
+    text-decoration: none;
+    font-size: 25px;
+    background-color: rgb(255, 231, 95);
+    padding: 5px;
+    width: 80%;
+    text-align: center;
+  }
+
+
+h1 {
+    font-family: 'Londrina Solid', cursive;
+    text-align: center;
+    font-size: 50px;
+    margin: 15px;
+    width: 100%;
+}
+
+.flex-content {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+}
+
+.flex-content img{
+    width: 100%;
+    height: auto;
+}
+
+.flex-item {
+    margin: 30px;
+    flex-grow: 1;
+}
+
+.flex-content h2{
+    margin: 5px;
+    font-family: 'Londrina Solid', cursive;
+    text-align: center;
+    font-size: 35px;
+    background-color: rgb(255, 23, 23);
+}
+
+.flex-content p{
+    margin: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    background-color: rgb(255, 231, 95);
+    padding: 10px;
+}
+
+
+/*MEDIUM SIZE SCREENS*/
+@media(min-width:800px) {
+    .navbar {
+        flex-direction: row;
+        padding-bottom: 0px;
+    }
+
+    .nav-item {
+        width: fit-content;
+    }
+
+    .tina{
+        order: 1;
+        flex-grow: 1;
+        width: 25%;
+    }
+    
+    .gene{
+        order: 2;
+        flex-grow: 1;
+        width: 25%;
+    }
+    
+    .louise{
+        order: 3;
+        flex-grow: 1;
+        width: 25%;
+    }
+    
+    .bob{
+        order: 4;
+        flex-grow: 2;
+        width: 25%;
+    }
+    
+    .linda{
+        width: 25%;
+        order: 5;
+        flex-grow: 1;
+    }
+
+
+
+    .nav-item:nth-child(1) {
+        order: 3;
+    }
+
+    .nav-item:nth-child(2) {
+        order: 1;
+    }
+
+    .nav-item:nth-child(3) {
+        order: 2;
+    }
+
+    .nav-item:nth-child(4) {
+        order: 4;
+    }
+
+    .nav-item:nth-child(5) {
+        order: 5;
+    }
+}

@@ -1,5 +1,5 @@
 .flex-container {
-    /*
+
     background-color: darkorange;
     display: flex;
     flex-direction: row;
@@ -7,8 +7,9 @@
     justify-content: space-around;
     align-items: stretch;
     height: 400px;
-    align-content: space-evenly;  */
+    align-content: space-evenly; 
 }
+
 
 .flex-item {
     margin: 10px;
