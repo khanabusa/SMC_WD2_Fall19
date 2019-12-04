@@ -9,14 +9,41 @@
 </head>
 <body>
     <header>
-            <div class="navbar">
-                    <img class="nav-item" src="images/NP-Logo.png" alt="Nikkei Progressives Logo">
-                    <a class="nav-item" href="index.html">HOME</a>
-                    <a class="nav-item" href="about.html">ABOUT</a>
-                    <a class="nav-item" href="donate.html">DONATE</a>
-                    <a class="nav-item" href="blog.html">BLOG</a>
-            </div>
+        
+        <nav>
+            <img src="images/tsuru.png" alt="off" id="nav-icon">
+            <ul id="UL">
+                <li><a href="index.html"><img class="nav-item" src="images/NP-Logo.png" alt="Nikkei Progressives Logo"></a></li>
+                <li><a class="nav-item current" href="index.html">HOME</a></li>
+                <li><a class="nav-item" href="about.html">ABOUT</a></li>
+                <li><a class="nav-item" href="donate.html">DONATE</a></li>
+                <li><a class="nav-item" href="blog.html">BLOG</a></li>
+            </ul>
+        </nav>
     </header>
     
+    <main>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <a href="https://www.facebook.com/NikkeiProgressives/"><img src="images/facebook-icon.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/nikkeiprogressives/"><img src="images/instagram-icon.png" alt="instagram"></a>
+            <a href="https://twitter.com/NikkeiProgress"><img src="images/twitter-icon.png" alt="twitter"></a>
+            <p>Copyright © 2019 Nikkei Progressives</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+            $(document).ready(function(){
+                $(".nav-icon").click(function(){
+                    $(".flex-item").slideDown();
+                });
+            });
+    </script>
 </body>
 </html>
