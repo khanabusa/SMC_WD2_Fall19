@@ -51,7 +51,6 @@ a[href^="tel:"] {
 
 .floater-section {
     float: left;
-    max-height: 450px;
     width: 100%;
 }
 

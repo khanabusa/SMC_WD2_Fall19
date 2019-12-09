@@ -9,21 +9,36 @@
 </head>
 <body>
     <header>
-    
         <div class="nav-bar">
             <a href="index.html"><img class="nav-item logo" src="images/NP-Logo.png" alt="Nikkei Progressives Logo"></a>
             <a class="nav-item current" href="index.html">HOME</a>
             <a class="nav-item" href="about.html">ABOUT</a>
             <a class="nav-item" href="donate.html">DONATE</a>
             <a class="nav-item" href="blog.html">BLOG</a>
-        </div>
+    </div>
     </header>
-    
+
     <main>
         <div>
             <h3>Nikkei Progressives is a grassroots, all-volunteer, multi-generational community organization. We formed in late 2016 in response to the Trump Administration’s expected attacks on the civil liberties of Muslim Americans, immigrants and other minority groups and in recognition of the need to offer support and resistance. We care deeply about Little Tokyo and issues of justice and fairness within the Japanese American community and beyond.</h3>
         </div>
-        <img class="banner" src="images/protesters.jpg" alt="Japanese American Protesters">
+        <div class="container">
+                <div class="floater-section width-md-50">
+                    <img src="images/grid2.jpg" alt="protesters">
+                </div>
+                <div class="floater-section width-md-50">
+                    <img src="images/grid1.jpg" alt="asylum seeker">
+                </div>
+                <div class="floater-section width-md-33">
+                    <img src="images/grid5.jpg" alt="protesters">
+                </div>
+                <div class="floater-section width-md-33">
+                    <img src="images/grid3.jpg" alt="asylum seeker">
+                </div>
+                <div class="floater-section width-md-33">
+                    <img src="images/grid4.jpg" alt="protesters">
+                </div>
+        </div>
 
     </main>
 
@@ -35,16 +50,9 @@
             <p>Copyright © 2019 Nikkei Progressives</p>
         </div>
     </footer>
+    
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="script.js"></script>
-
-    <script>
-            $(document).ready(function(){
-                $(".nav-icon").click(function(){
-                    $(".flex-item").slideDown();
-                });
-            });
-    </script>
 </body>
 </html>

@@ -114,7 +114,7 @@ input {
     display: none;
 }
 
-@media(min-width:540px) {
+@media(min-width:694px) {
 .donate-pg .banner{
     height: 250px;
 }

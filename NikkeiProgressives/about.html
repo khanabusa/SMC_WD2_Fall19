@@ -9,31 +9,22 @@
 </head>
 <body>
     <header>
+    
         <div class="nav-bar">
             <a href="index.html"><img class="nav-item logo" src="images/NP-Logo.png" alt="Nikkei Progressives Logo"></a>
             <a class="nav-item" href="index.html">HOME</a>
             <a class="nav-item current" href="about.html">ABOUT</a>
             <a class="nav-item" href="donate.html">DONATE</a>
             <a class="nav-item" href="blog.html">BLOG</a>
-    </div>
+        </div>
     </header>
-
+    
     <main>
-            <div class="floater-section width-md-50">
-                    <img src="images/Refresh_drinks.jpg" alt="Refresh Drinks">
-                </div>
-                <div class="floater-section width-md-50">
-                    <img src="images/Refresh_coffee.jpg" alt="Refresh Coffee">
-                </div>
-                <div class="floater-section width-md-33">
-                    <img src="images/Refresh_outside.jpg" alt="Refresh Storefront">
-                </div>
-                <div class="floater-section width-md-33">
-                    <img src="images/Refresh_tea2.jpg" alt="Refresh Tea">
-                </div>
-                <div class="floater-section width-md-33">
-                    <img src="images/Refresh_latte.jpg" alt="Refresh Latte">
-                </div>
+        <img class="banner" src="images/protesters.jpg" alt="Japanese American Protesters">
+        <div>
+            <h2>Where We’re From</h2> 
+                <p>Rooted in Los Angeles’ Little Tokyo, Nikkei Progressives carries on the values and principles of earlier groups, like the Little Tokyo Peoples Rights Organization (LTPRO) that worked to preserve Little Tokyo during the City’s 1970s redevelopment and Nikkei for Civil Rights & Redress (NCRR) that led the grassroots struggle for Redress and Reparations and supported Muslim Americans following 9/11. Many of us are also members of Sustainable Little Tokyo (SLT) and work to promote community control in the face of growing gentrification.</p>
+        </div>
 
     </main>
 
@@ -45,9 +36,16 @@
             <p>Copyright © 2019 Nikkei Progressives</p>
         </div>
     </footer>
-    
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="script.js"></script>
+
+    <script>
+            $(document).ready(function(){
+                $(".nav-icon").click(function(){
+                    $(".flex-item").slideDown();
+                });
+            });
+    </script>
 </body>
 </html>

@@ -68,7 +68,7 @@ h3 {
     position: absolute;
     top: 400px;
     color:black;
-    background-color:rgba(219, 219, 219, 0.7);
+    background-color:rgba(219, 219, 219, 0.8);
     width: 80%;
     padding: 30px;
     line-height: 1.7;
@@ -78,6 +78,33 @@ h3 {
     float: left;
     max-height: 450px;
     width: 100%;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    background-color: rgb(170, 0, 0);
+}
+
+.container::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.clearfix {
+    position: relative;
+}
+
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
 }
 
 .flex-content img{
@@ -132,7 +159,7 @@ footer {
 }
 
   /*MEDIUM SIZE SCREENS*/
-@media(min-width:800px) {
+@media(min-width:694px) {
     .banner {
         width: 100%;
         height: auto;
