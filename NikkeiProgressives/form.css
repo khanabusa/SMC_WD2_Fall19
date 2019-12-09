@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo|Roboto&display=swap');
+
+
+fieldset {
+    border: none;
+    padding: 0px;
+}
+
+.donate-pg h2 {
+    color: rgb(170, 0, 0);
+    font-size: 40px;
+    line-height: 49px;
+}
+
+.donate-form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-family: 'Heebo', sans-serif;
+    color: black;
+    margin: 20px;
+    justify-content: center;
+}
+
+.donate-form label {
+    margin: 5px 10px 5px 0;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.donate-form input,
+select {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid rgb(170, 0, 0);
+    width: 100%;
+}
+
+.donate-form option {
+    color:black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.donate-form .field {
+    margin: 10px 0px;
+}
+
+.donate-form button {
+    padding: 10px 20px;
+    background-color:black;
+    color: white;
+    cursor: pointer;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.donate-form .amount {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}
+
+.donate-form .amount .button {
+    width: 50%;
+    height: 60px;
+    background-color: rgb(170, 0, 0);
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 25px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.donate-form .amount input,
+.amount p {
+    margin: 0 auto;
+}
+
+.donate-form .amount .button input {
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    border-bottom: 2px solid white;
+}
+
+.button input {
+    padding: 0px;
+}
+
+input {
+    box-sizing: border-box
+}
+
+
+.replace{
+    margin: 50px;
+}
+
+.hidden-all{
+    display: none;
+}
+
+@media(min-width:540px) {
+.donate-pg .banner{
+    height: 250px;
+}
+
+    .donate-pg .banner h1 {
+        font-size: 55px;
+        line-height: 64px;
+    }
+
+    .donate-pg .banner p {
+      font-size: 18px;
+    }
+
+
+    .donate-form .amount .button:hover {
+        background-color: rgba(170, 0, 0, 0.75);
+    }
+    
+    .button:hover {
+        background-color: rgb(170, 0, 0);
+    }
+
+    .replace h2{
+        font-size: 70px;
+        line-height: 82px;
+    }
+}
+
+
+@media (min-width: 800px) {
+    .donate-pg .banner{
+        height: 300px;
+    }
+    
+    .donate-pg .banner h1 {
+        font-size: 80px;
+        line-height: 83px;
+    }
+
+    .donate-pg .banner p {
+      font-size: 20px;
+    }
+
+    .donate-form input {
+        margin: 10px 0;
+    }
+
+    .donate-form {
+    flex-direction: column;    
+    }
+
+    fieldset{
+        padding: 25px;
+    }
+
+    .form-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .donate-form button {
+        padding: 10px 100px;
+    }
+
+    .replace h2{
+        font-size: 90px;
+        line-height: 101px;
+    }
+}

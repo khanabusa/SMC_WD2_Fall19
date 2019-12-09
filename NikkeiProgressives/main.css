@@ -5,7 +5,7 @@ body {
     margin: 0 auto;
    }
 
-nav {
+.nav-bar {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -14,52 +14,98 @@ nav {
     background-color: rgb(170, 0, 0);
   }
 
+
 .nav-item {
     font-family: 'Heebo', sans-serif;
     font-weight: 700;
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 20px;
     padding: 5px;
     text-align: center;
+    width: 20%;
   }
 
 .nav-item:hover {
-    color: rgba(255, 255, 255, 0.75);
-}
+    color:  rgba(255, 255, 255, 0.7);
+  }
 
-nav img {
+.nav-bar img {
     height: 100px;
     width: auto;
-}
-
-nav ul {
-    position: absolute;
-    padding: 5px 20px;
-    display: none;
-    z-index: 1;
-}
-
-nav-icon {
-    position: absolute;
-    width: 40px;
-    margin: 5px;
-    z-index: 1;
 }
 
 .current {
     text-decoration: underline double;
 }
 
+.banner {
+    height: fit-content;
+}
+
 .flex-content {
     display: flex;
     flex-direction: column;
-    flex-flow: wrap;
+    flex-flow: wrap ;
 }
 
 .flex-item {
     margin: 30px;
     flex-grow: 1;
+}
+
+h1 {
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    margin: 15px;
+    width: 100%;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    position: absolute;
+    top: 400px;
+    color:black;
+    background-color:rgba(219, 219, 219, 0.7);
+    width: 80%;
+    padding: 30px;
+    line-height: 1.7;
+}
+
+.floater-section {
+    float: left;
+    max-height: 450px;
+    width: 100%;
+}
+
+.flex-content img{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.flex-content h2{
+    margin: 5px;
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(170, 0, 0);
+}
+
+.flex-content p{
+    margin: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+}
+
+button {
+    text-align: center;
+}
+
+.button:hover {
+    background-color: rgba(170, 0, 0, 0.7);
 }
 
 footer {
@@ -87,13 +133,50 @@ footer {
 
   /*MEDIUM SIZE SCREENS*/
 @media(min-width:800px) {
-    nav {
+    .banner {
+        width: 100%;
+        height: auto;
+    }
+
+    h3 {
+        top: 250px;
+    }
+
+    .blog-a{
+        order: 2;
+        flex-grow: 2;
+        width: 25%;
+    }
+    
+    .blog-b{
+        order: 1;
+        flex-grow: 1;
+        width: 25%;
+    }
+    
+    .blog-c{
+        order: 3;
+        flex-grow: 1;
+        width: 25%;
+    }
+
+    .flex-content img{
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-bar {
         flex-direction: row;
         padding-bottom: 15px;
     }
 
-    nav img {
-       width: 10%;
+    .nav-item {
+        width: fit-content;
+        height: auto;
+    }
+
+    .navbar img {
+       width: 20%;
        height: auto;
     }
 
@@ -115,5 +198,13 @@ footer {
 
     .nav-item:nth-child(5) {
         order: 5;
+    }
+
+    .width-md-50 {
+        width: 50%;
+    }
+
+    .width-md-33 {
+        width: 33.333333%;
     }
 }
