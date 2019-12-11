@@ -22,7 +22,7 @@ fieldset {
     justify-content: center;
 }
 
-.donate-form label {
+.donate-form h5 {
     margin: 5px 10px 5px 0;
     font-family: 'Lora', serif;
     color: black;
