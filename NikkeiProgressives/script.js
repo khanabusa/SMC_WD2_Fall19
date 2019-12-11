@@ -1,10 +1,19 @@
   $(document).ready(function(){
 
-    $('.button-show').click(function(){
-      $('.caption').show("slideDown");
+    $(".button-a").click(function(){
+      $(".blog-a").show("fast") ;
+    });
+
+    $(".button-b").click(function(){
+      $(".blog-b").show("fast") ;
     });
     
-    $( ".donate-submit" ).click(function() {
+    $(".button-c").click(function(){
+      $(".blog-c").show("fast");
+    });
+
+
+    $( ".donate-submit" ).click(function(){
       $("form").replaceWith( $( ".replace" ) );
     });
 

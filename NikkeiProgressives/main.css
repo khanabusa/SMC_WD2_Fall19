@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
 
 body {
     background-color: white;
     margin: 0 auto;
+    border: 1px solid transparent;
    }
+
+main {
+    min-height: 500px;
+}
 
 .nav-bar {
     display: flex;
@@ -20,7 +26,7 @@ body {
     font-weight: 700;
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     padding: 5px;
     text-align: center;
     width: 20%;
@@ -40,7 +46,8 @@ body {
 }
 
 .banner {
-    height: fit-content;
+    height: auto;
+    width: 100%;
 }
 
 .flex-content {
@@ -52,14 +59,21 @@ body {
 .flex-item {
     margin: 30px;
     flex-grow: 1;
+    flex-direction: row;
 }
 
 h1 {
+    font-family: 'Lora', serif;
+    text-align: center;
+    font-size: 25px;
+    margin: 35px 15px 0px 15px;
+}
+
+h2 {
     font-family: 'Heebo', sans-serif;
     text-align: center;
-    font-size: 50px;
-    margin: 15px;
-    width: 100%;
+    font-size: 25px;
+    padding: 10px;
 }
 
 h3 {
@@ -68,10 +82,16 @@ h3 {
     position: absolute;
     top: 400px;
     color:black;
-    background-color:rgba(219, 219, 219, 0.8);
+    background-color:rgba(255, 255, 255, 0.8);
     width: 80%;
     padding: 30px;
     line-height: 1.7;
+}
+
+p {
+    font-family: 'Lora', serif;
+    font-size: 12px;
+    margin: 40px;
 }
 
 .floater-section {
@@ -146,7 +166,7 @@ footer {
     margin: 10px 10px 0px 10px;
 }
 
-.footer p{
+.footer h4{
     font-family: 'Roboto', sans-serif;
     margin-top: 5px;
     font-size: 9px;
@@ -169,19 +189,25 @@ footer {
         top: 250px;
     }
 
-    .blog-a{
+    p {
+        font-size: 18px;
+        margin: 0px 60px 50px 60px;
+        line-height: 1.4;
+    }
+
+    .blog-d{
         order: 2;
-        flex-grow: 2;
+        flex-grow: 1;
         width: 25%;
     }
     
-    .blog-b{
+    .blog-e{
         order: 1;
         flex-grow: 1;
         width: 25%;
     }
     
-    .blog-c{
+    .blog-f{
         order: 3;
         flex-grow: 1;
         width: 25%;
@@ -192,6 +218,10 @@ footer {
         height: auto;
     }
 
+    .flex-content {
+        flex-direction: row;
+    }
+
     .nav-bar {
         flex-direction: row;
         padding-bottom: 15px;
@@ -200,6 +230,7 @@ footer {
     .nav-item {
         width: fit-content;
         height: auto;
+        font-size: 20px;
     }
 
     .navbar img {

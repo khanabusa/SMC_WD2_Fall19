@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
 
 
 fieldset {
@@ -16,7 +17,7 @@ fieldset {
     display: flex;
     flex-flow: column;
     align-items: center;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Lora', serif;
     color: black;
     margin: 20px;
     justify-content: center;
@@ -24,7 +25,7 @@ fieldset {
 
 .donate-form label {
     margin: 5px 10px 5px 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lora', serif;
     color: black;
 }
 
@@ -108,6 +109,15 @@ input {
 
 .replace{
     margin: 50px;
+}
+
+.replace img{
+    text-align: center;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
 }
 
 .hidden-all{
