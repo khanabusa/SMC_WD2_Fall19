@@ -19,7 +19,6 @@ fieldset {
     align-items: center;
     font-family: 'Lora', serif;
     color: black;
-    margin: 20px;
     justify-content: center;
 }
 
@@ -56,6 +55,7 @@ select {
     font-family: 'Heebo', sans-serif;
     font-weight: 700;
     font-size: 25px;
+    margin-bottom: 25px;
 }
 
 .donate-form .amount {

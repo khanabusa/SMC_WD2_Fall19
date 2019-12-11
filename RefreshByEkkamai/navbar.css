@@ -59,10 +59,9 @@ li a:hover {
 }
 
 @media(min-width: 540px){
-    .logo {
-        text-align: left;
-        width: 100px;
-        padding: 10px;
+    .logo img{
+        height: auto;
+        width: 100%;
     }
 
     header label {
